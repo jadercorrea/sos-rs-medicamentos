@@ -1,13 +1,13 @@
 {
    "version":"6",
-   "id":"clw0n2fe6001mqgjvxwoheh6x",
-   "name":"SOS - RS",
+   "id":"clw3ijhgq000tz1ctl8wpqbhi",
+   "name":"SOS-RS-medicamentos",
    "events":[
       {
          "id":"v81g4aqr270xf9u7vbagzf58",
          "outgoingEdgeId":"y47flnqcwhqcmjjba7udpp89",
          "graphCoordinates":{
-            "x":0,
+            "x":-66,
             "y":0
          },
          "type":"start"
@@ -93,8 +93,8 @@
          "id":"dq1tedkg7mwrl47466g1fxov",
          "title":"Group #4",
          "graphCoordinates":{
-            "x":639,
-            "y":213
+            "x":637,
+            "y":217
          },
          "blocks":[
             {
@@ -135,14 +135,13 @@
                }
             },
             {
-               "id":"ul9mteq31u2xw7ehtm0n1vot",
-               "outgoingEdgeId":"jg3zqkmeezv035rk961ot4k2",
-               "type":"text input",
+               "id":"cr94l7n217cmtsobsdn7af72",
+               "outgoingEdgeId":"vkuw2ht5sc9cmy1bl3qsooqj",
+               "type":"number input",
                "options":{
-                  "labels":{
-                     "placeholder":"Digite a resposta..."
-                  },
-                  "variableId":"vlfycxwskhs25a7wmbqjheao2"
+                  "variableId":"vlfycxwskhs25a7wmbqjheao2",
+                  "min":1,
+                  "max":10000
                }
             }
          ]
@@ -151,8 +150,8 @@
          "id":"c1zuh4gnrlu128gcrtjg1e2c",
          "title":"Group #6",
          "graphCoordinates":{
-            "x":1392,
-            "y":8
+            "x":1814,
+            "y":7
          },
          "blocks":[
             {
@@ -160,18 +159,18 @@
                "outgoingEdgeId":"xz0kjan89pht104marqp1yk1",
                "type":"Google Sheets",
                "options":{
-                  "credentialsId":"clw0ng699000z55k0t8k6lpk3",
+                  "credentialsId":"clw3j4nkx001dxunxfd5ku152",
                   "sheetId":"0",
-                  "spreadsheetId":"1CGluhyYHWd2639x0coklZ5rfGvYDiA6nZXmkgYsPz8A",
+                  "spreadsheetId":"1KPRPlxq5_vUPjfGi4q5-pNVTUEcv9tMAyUqpXAFifoQ",
                   "action":"Insert a row",
                   "cellsToInsert":[
                      {
-                        "column":"medicamento",
+                        "column":"medicamento_url",
                         "value":"{{medicamento}}",
                         "id":"tkf2jwbpt3h5atovr35q2z34"
                      },
                      {
-                        "column":"lote",
+                        "column":"lote_url",
                         "value":"{{lote}}",
                         "id":"jiijzwbmbi3ahuvbo8wc2d23"
                      },
@@ -179,6 +178,16 @@
                         "column":"quantidade",
                         "value":"{{quantidade}}",
                         "id":"k4t8gze4duwiblhfgn6xyq45"
+                     },
+                     {
+                        "column":"medicamento",
+                        "value":"=IMAGE(\"{{medicamento}}\")",
+                        "id":"oy9gtnm6hwujkywhzppcrznb"
+                     },
+                     {
+                        "column":"lote",
+                        "value":"=IMAGE(\"{{lote}}\")",
+                        "id":"ijpuasnda09bmbs2kv5fuuu2"
                      }
                   ]
                }
@@ -189,7 +198,7 @@
          "id":"woh5ub40dmv2jqplxtkqadgn",
          "title":"Group #7",
          "graphCoordinates":{
-            "x":1754,
+            "x":2202,
             "y":13
          },
          "blocks":[
@@ -205,6 +214,96 @@
                               "text":"Obrigado!"
                            }
                         ]
+                     }
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "id":"utm452jhxyam6sv3sc8apth7",
+         "title":"Group #8",
+         "graphCoordinates":{
+            "x":1418,
+            "y":8
+         },
+         "blocks":[
+            {
+               "id":"h3e5qkp9w6jficqnm7kmu5md",
+               "type":"text",
+               "content":{
+                  "richText":[
+                     {
+                        "type":"p",
+                        "children":[
+                           {
+                              "text":"Em qual base você está?"
+                           }
+                        ]
+                     }
+                  ]
+               }
+            },
+            {
+               "id":"xcpf7f6xyxbsfnt3mhu29xau",
+               "type":"choice input",
+               "items":[
+                  {
+                     "id":"kyjo5x0vkps2erlf8xqldrxe",
+                     "outgoingEdgeId":"me7y09ta8uyc09aj2xuc2yd6",
+                     "content":"Base Aérea"
+                  },
+                  {
+                     "id":"s8h8naun7s7kf76lie2ssj62",
+                     "outgoingEdgeId":"oeofl53t6boli0y7zmwnfixl",
+                     "content":"Unisinos"
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "id":"chddm0wnunstk15mj7rhw4dl",
+         "title":"Group #6 (1)",
+         "graphCoordinates":{
+            "x":1815,
+            "y":215
+         },
+         "blocks":[
+            {
+               "id":"kg95un9lnma7uzo6cg26adcd",
+               "outgoingEdgeId":"o2ltnombflyase21rfeegpj4",
+               "type":"Google Sheets",
+               "options":{
+                  "credentialsId":"clw3j4nkx001dxunxfd5ku152",
+                  "sheetId":"0",
+                  "spreadsheetId":"1349fsRWR4zjlwdah1U8FQ0_k5I9QWmhrRz_6bvUZQ-s",
+                  "action":"Insert a row",
+                  "cellsToInsert":[
+                     {
+                        "column":"medicamento_url",
+                        "value":"{{medicamento}}",
+                        "id":"tkf2jwbpt3h5atovr35q2z34"
+                     },
+                     {
+                        "column":"lote_url",
+                        "value":"{{lote}}",
+                        "id":"jiijzwbmbi3ahuvbo8wc2d23"
+                     },
+                     {
+                        "column":"quantidade",
+                        "value":"{{quantidade}}",
+                        "id":"k4t8gze4duwiblhfgn6xyq45"
+                     },
+                     {
+                        "column":"medicamento",
+                        "value":"=IMAGE(\"{{medicamento}}\")",
+                        "id":"oy9gtnm6hwujkywhzppcrznb"
+                     },
+                     {
+                        "column":"lote",
+                        "value":"=IMAGE(\"{{lote}}\")",
+                        "id":"ijpuasnda09bmbs2kv5fuuu2"
                      }
                   ]
                }
@@ -275,6 +374,44 @@
          "to":{
             "groupId":"woh5ub40dmv2jqplxtkqadgn"
          }
+      },
+      {
+         "id":"vkuw2ht5sc9cmy1bl3qsooqj",
+         "from":{
+            "blockId":"cr94l7n217cmtsobsdn7af72"
+         },
+         "to":{
+            "groupId":"utm452jhxyam6sv3sc8apth7"
+         }
+      },
+      {
+         "id":"me7y09ta8uyc09aj2xuc2yd6",
+         "from":{
+            "blockId":"xcpf7f6xyxbsfnt3mhu29xau",
+            "itemId":"kyjo5x0vkps2erlf8xqldrxe"
+         },
+         "to":{
+            "groupId":"c1zuh4gnrlu128gcrtjg1e2c"
+         }
+      },
+      {
+         "id":"oeofl53t6boli0y7zmwnfixl",
+         "from":{
+            "blockId":"xcpf7f6xyxbsfnt3mhu29xau",
+            "itemId":"s8h8naun7s7kf76lie2ssj62"
+         },
+         "to":{
+            "groupId":"chddm0wnunstk15mj7rhw4dl"
+         }
+      },
+      {
+         "id":"o2ltnombflyase21rfeegpj4",
+         "from":{
+            "blockId":"kg95un9lnma7uzo6cg26adcd"
+         },
+         "to":{
+            "groupId":"woh5ub40dmv2jqplxtkqadgn"
+         }
       }
    ],
    "variables":[
@@ -303,13 +440,13 @@
          "isBrandingEnabled":true
       }
    },
-   "createdAt":"2024-05-10T12:13:45.198Z",
-   "updatedAt":"2024-05-10T12:35:02.664Z",
+   "createdAt":"2024-05-12T12:30:21.482Z",
+   "updatedAt":"2024-05-12T13:18:43.478Z",
    "icon":null,
    "folderId":null,
-   "publicId":"sos-rs-medicamentos",
+   "publicId":null,
    "customDomain":null,
-   "workspaceId":"clusfngk7000uk1y1j6jykpc7",
+   "workspaceId":"clw3iexu7000kz1ctd51zgjj1",
    "resultsTablePreferences":null,
    "isArchived":false,
    "isClosed":false,
