@@ -1,6 +1,6 @@
 {
    "version":"6",
-   "id":"clw3kbwfq00013psaggji5lzu",
+   "id":"clw57alwq000kjtzgwroicnkh",
    "name":"SOS-RS-medicamentos",
    "events":[
       {
@@ -63,7 +63,7 @@
                "outgoingEdgeId":"xz0kjan89pht104marqp1yk1",
                "type":"Google Sheets",
                "options":{
-                  "credentialsId":"clw0ng699000z55k0t8k6lpk3",
+                  "credentialsId":"clw3j4nkx001dxunxfd5ku152",
                   "sheetId":"0",
                   "spreadsheetId":"1KPRPlxq5_vUPjfGi4q5-pNVTUEcv9tMAyUqpXAFifoQ",
                   "action":"Insert a row",
@@ -179,7 +179,7 @@
                "outgoingEdgeId":"o2ltnombflyase21rfeegpj4",
                "type":"Google Sheets",
                "options":{
-                  "credentialsId":"clw0ng699000z55k0t8k6lpk3",
+                  "credentialsId":"clw3j4nkx001dxunxfd5ku152",
                   "sheetId":"0",
                   "spreadsheetId":"1349fsRWR4zjlwdah1U8FQ0_k5I9QWmhrRz_6bvUZQ-s",
                   "action":"Insert a row",
@@ -436,13 +436,13 @@
          "isBrandingEnabled":true
       }
    },
-   "createdAt":"2024-05-12T13:20:26.869Z",
-   "updatedAt":"2024-05-12T14:48:55.512Z",
+   "createdAt":"2024-05-13T16:51:03.914Z",
+   "updatedAt":"2024-05-13T16:53:31.335Z",
    "icon":null,
    "folderId":null,
-   "publicId":"sos-rs-medicamentos",
+   "publicId":"sos-rs-medicamentos-v1-1",
    "customDomain":null,
-   "workspaceId":"clusfngk7000uk1y1j6jykpc7",
+   "workspaceId":"clw3iexu7000kz1ctd51zgjj1",
    "resultsTablePreferences":null,
    "isArchived":false,
    "isClosed":false,
