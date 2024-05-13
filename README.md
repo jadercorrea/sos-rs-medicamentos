@@ -9,7 +9,7 @@ processamento.
 ### Funcionamento
 Usuários recebem link direto para acesso ao bot. A foto do primeiro medicamento é solicitada, e em seguida, uma foto do lote do medicamento para controle e a quantidade disponível.
 
-As URLs das imagens são disponibilizadas para checagem no google sheets definido como target, junto com a quantidade.
+As URLs das imagens são disponibilizadas para checagem no google sheets definido como target, junto com a quantidade. Para facilitar o uso, as imagens capturadas são adicionadas no Sheets usando a formula `=image(url)`, de forma a permitir a visualização do nome e do lote sem necessidade de click nas urls, que são peristidas para o caso de serem necessárias.
 
 ### Ferramentas
 * Typebot: http://typebot.io/
